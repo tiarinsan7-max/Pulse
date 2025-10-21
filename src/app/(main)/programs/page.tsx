@@ -3,6 +3,7 @@ import { getBrands, getProgramsWithBrand } from "@/lib/data";
 import ProgramsClient from "./programs-client";
 import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function ProgramsPage() {
     return (
