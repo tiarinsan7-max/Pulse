@@ -24,9 +24,10 @@ type DashboardClientProps = {
 };
 
 const formatCurrency = (value: number) => {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("id-ID", {
     style: "currency",
-    currency: "USD",
+    currency: "IDR",
+    maximumFractionDigits: 0,
   }).format(value);
 };
 
@@ -103,7 +104,7 @@ export function DashboardClient({
                         axisLine={false}
                     />
                     <YAxis 
-                        tickFormatter={(value) => `$${Number(value) / 1000}k`}
+                        tickFormatter={(value) => `Rp${Number(value) / 1000}k`}
                     />
                     <ChartTooltip
                         cursor={false}

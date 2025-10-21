@@ -46,7 +46,7 @@ export default function ProgramCard({ program, onEdit }: ProgramCardProps) {
       </CardContent>
       <CardFooter className="flex justify-between items-center text-sm">
         <div className="font-semibold text-primary">
-            {new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(estimatedReward)}
+            {new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(estimatedReward)}
         </div>
         <div className="text-muted-foreground">
             Ends {formatDate(program.periodEnd)}
